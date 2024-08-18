@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking System</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1>Vehicle Rental Booking System</h1>
+    <form id="booking-form">
+        <label for="vehicle">Select a Vehicle:</label>
+        <select id="vehicle" name="vehicle">
+            <option value="Audi E-tron">Audi E-tron</option>
+            <option value="Ford's Mini">Ford's Mini</option>
+            <option value="Rubicon">Rubicon</option>
+            <option value="OLA Electric Scooter">OLA Electric Scooter</option>
+            <option value="Mastro">Mastro</option>
+            <option value="Bajaj-Pulsar">Bajaj-Pulsar</option>
+            <option value="Hero Honda">Hero Honda</option>
+            <option value="Yamaha R15">Yamaha R15</option>
+            <option value="Bicycle">Bicycle</option>
+        </select>
+        <br><br>
+        <label for="rental-period">Choose Rental Period:</label>
+        <select id="rental-period" name="rental-period">
+            <option value="hourly">Hourly</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+
+        </select>
+        <br><br>
+        <label for="pickup-date">Pickup Date:</label>
+        <input type="date" id="pickup-date" name="pickup-date">
+        <br><br>
+        <label for="pickup-time">Pickup Time:</label>
+        <input type="time" id="pickup-time" name="pickup-time">
+        <br><br>
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date">
+        <br><br>
+        <label for="return-time">Return Time:</label>
+        <input type="time" id="return-time" name="return-time">
+        <br><br>
+        <button id="confirm-booking">Confirm Booking</button>
+    </form>
+    <div id="availability"></div>
+</body>
+</html>
